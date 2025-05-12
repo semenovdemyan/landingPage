@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urban Dwelling</title>
+    <link rel="icon" href="imgs/UI/fav.svg" type="image/x-icon" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -15,7 +16,7 @@
         <div class="container header__container--black">
           <a target="_blank" rel="noopener" href="#">Доставка и&nbsp;оплата</a>
           <a target="_blank" rel="noopener" href="#">Гарантия и&nbsp;возврат</a>
-          <button>EN</button>
+          <button class="header__btn--lang-toggle">EN</button>
         </div>
       </div>
       <div class="header__white-block">
@@ -55,49 +56,78 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <ul>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Iste in dolore nam quibusdam.</li>
-          <li>Amet vitae commodi omnis nihil?</li>
-          <li>Tempora unde cupiditate perspiciatis reiciendis!</li>
-        </ul>
-        <span
-          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
-          excepturi maxime, ut impedit doloremque inventore ab reiciendis hic
-          est qui necessitatibus. Labore magnam fugit eligendi esse, aperiam ea
-          ratione dolore quos ex omnis maiores doloremque repudiandae, sed harum
-          a numquam? Molestias autem modi illo corrupti similique officiis atque
-          nostrum sint quo dolorum id non cum molestiae ratione perspiciatis hic
-          quis quidem fuga aperiam saepe explicabo qui odio, inventore
-          distinctio! Veritatis veniam recusandae possimus quod iure sed est
-          cupiditate itaque vel, laborum, reiciendis reprehenderit, at id a
-          dolor consequuntur numquam. Nisi quos dolores saepe itaque eligendi
-          eveniet consequuntur. Ab repellendus veniam, rerum maiores qui impedit
-          dolore exercitationem nulla ex? Ipsam obcaecati, nulla quibusdam
-          dolorem repellat harum quaerat odit exercitationem enim, repudiandae
-          quasi ullam magnam magni quae temporibus, tempore consequatur
-          perferendis. Provident eum placeat omnis aut iste fugiat commodi, iure
-          labore? Officia iure labore facere corporis ex dolorem architecto
-          provident, omnis sapiente soluta veniam maiores quaerat debitis vitae
-          tempora quasi ut saepe? Ipsum quasi ut ratione necessitatibus facere
-          doloribus quod enim? Placeat est omnis reiciendis laudantium at.
-          Veritatis itaque vitae inventore. Vero, magni recusandae in et aperiam
-          atque nobis quibusdam eum laboriosam praesentium iure id inventore.
-          Rem nostrum rerum pariatur perferendis molestias minima voluptatibus
-          reiciendis incidunt neque voluptate numquam veniam a error laborum
-          omnis, obcaecati temporibus vel et consequuntur. Nihil recusandae enim
-          nemo sed, consequatur iste fugit quia animi doloribus culpa iure
-          itaque molestiae consectetur autem id pariatur excepturi eos ea. Illo,
-          mollitia, porro blanditiis voluptatibus dolores nisi perspiciatis
-          consequatur adipisci, sunt vitae unde impedit est minima quod
-          perferendis amet ipsa voluptate accusantium eius maxime eveniet alias.
-          Nihil, aut? Et sed nulla sunt modi vel in magni! Nostrum, quia
-          voluptas hic sint eligendi explicabo odio necessitatibus, assumenda
-          esse blanditiis et architecto quasi veritatis cumque corporis labore
-          at cupiditate corrupti laudantium vero fuga?</span
-        >
+        <div class="grid-container">
+          <div class="grid-item grid-item--scroll">
+            <button class="button button--scroll">
+              <img class="footer__logo" src="imgs/UI/foot_logo.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="grid-item grid-item--address">
+            <h3 class="grid-item__title">Адрес</h3>
+            <p class="grid-item__text">Текст, Текст, Текст</p>
+          </div>
+
+          <div class="grid-item grid-item--links">
+            <h3 class="grid-item__title">Услуги</h3>
+            <ul class="grid-item__list">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">О&nbsp;компании</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Доставка и&nbsp;оплата</a></li>
+              <li><a href="#">Гарантия и&nbsp;возврат</a></li>
+            </ul>
+          </div>
+          <div class="grid-item grid-item--two-links">
+            <ul class="grid-item__list">
+              <li><a href="#">Публичная оферта</a></li>
+              <li><a href="#">Политика персональных данных</a></li>
+            </ul>
+          </div>
+
+          <div class="grid-item grid-item--text">
+            <p class="grid-item__text--privacy">
+              <span id="recapcha"
+                >Этот сайт защищен от&nbsp;спама службой reCAPTCHA Google.</span
+              >
+              <a class="privacy-policy" href="#" target="_blank" rel="noopener"
+                >Политика конфиденциальности</a
+              >
+              <span id="slash">/</span>
+              <a class="privacy-policy" href="#" target="_blank" rel="noopener"
+                >Условия предоставления услуг</a
+              >
+            </p>
+          </div>
+
+          <div class="grid-item grid-item--two-links">
+            <h3 class="grid-item__title">Контакты</h3>
+            <ul class="grid-item__list">
+              <li>
+                <a href="mailto:urban.dwelling@yandex.com"
+                  >Email:&nbsp;urban.dwelling@yandex.com</a
+                >
+              </li>
+              <li><a href="tel:+79999999999">Телефон: 8 (999) 999-99-99</a></li>
+            </ul>
+          </div>
+
+          <div class="grid-item grid-item--image-list">
+            <span id="mir"
+              ><img src="imgs/payment/mir.svg" alt="Платёжная система МИР"
+            /></span>
+            <span id="visa"
+              ><img src="imgs/payment/visa.svg" alt="Платёжная система Visa"
+            /></span>
+            <span id="mc"
+              ><img
+                src="imgs/payment/mc.svg"
+                alt="Платёжная система Master Card"
+            /></span>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

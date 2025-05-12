@@ -1,0 +1,47 @@
+body {
+  width: 100%;
+}
+
+.container {
+  padding: 0 15px;
+  width: 1400px;
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 320px;
+    padding: 0 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 680px;
+    padding: 0 44px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 1240px;
+  }
+}
+
+header,
+main,
+footer,
+.header__black-block,
+.header__white-block {
+  padding: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  flex-direction: column;
+}
+
+.product-card {
+  max-width: 288px;
+}

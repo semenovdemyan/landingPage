@@ -1,0 +1,66 @@
+[
+  {
+    "productName": "Встраиваемый светильник Markt",
+    "image": "../imgs/content/cont1.png",
+    "price": "",
+    "initPrice": "3 490",
+    "finalPrice": "5 060",
+    "special": true
+  },
+  {
+    "productName": "Линейный светильник ARG",
+    "image": "../imgs/content/cont2.png",
+    "price": "6700",
+    "initPrice": "",
+    "finalPrice": "",
+    "special": false
+  },
+  {
+    "productName": "Сведодиодный светильник ",
+    "image": "../imgs/content/cont3.png",
+    "price": "",
+    "initPrice": "5060",
+    "finalPrice": "22 060",
+    "special": true
+  },
+  {
+    "productName": "Встраиваемый светильник Markt",
+    "image": "../imgs/content/cont4.png",
+    "price": "3 490",
+    "initPrice": "",
+    "finalPrice": "",
+    "special": false
+  },
+  {
+    "productName": "Линейный светильник ARG",
+    "image": "../imgs/content/cont5.png",
+    "price": "",
+    "initPrice": "6 700",
+    "finalPrice": "7 060",
+    "special": true
+  },
+  {
+    "productName": "Сведодиодный светильник ",
+    "image": "../imgs/content/cont6.png",
+    "price": "5 060",
+    "initPrice": "",
+    "finalPrice": "",
+    "special": false
+  },
+  {
+    "productName": "Встраиваемый светильник Markt",
+    "image": "../imgs/content/cont7.png",
+    "price": "",
+    "initPrice": "3 490",
+    "finalPrice": "7 060",
+    "special": false
+  },
+  {
+    "productName": "Линейный светильник ARG",
+    "image": "../imgs/content/cont8.png",
+    "price": "6 700",
+    "initPrice": "",
+    "finalPrice": "",
+    "special": true
+  }
+]

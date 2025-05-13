@@ -71,11 +71,12 @@ header {
 .container {
   width: 1470px;
   padding: 0 35px;
+  font-size: 0;
 }
 
 @media (max-width: 390px) {
   .container {
-    width: 320px;
+    width: 100%;
     padding: 0 35px;
   }
 }
@@ -153,8 +154,7 @@ header {
 
 .section__products {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: left;
   flex-wrap: wrap;
   padding-bottom: 50px;
   gap: 40px;
@@ -170,6 +170,7 @@ header {
 
 .product-card--with-background {
   position: relative;
+  margin-bottom: 20px;
   padding: 0 31px;
   width: 100%;
   min-width: 320px;
@@ -219,7 +220,6 @@ header {
   font-size: 16px;
   font-weight: 400;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  transition: opacity 0.3s, visibility 0.3s;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -246,9 +246,20 @@ header {
   background-color: rgb(255, 120, 43);
 }
 
+.product-card__title {
+  color: rgb(35, 24, 21);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
 /* MAIN */
 
 /* FOOTER */
+.footer__container {
+  padding: 40px 35px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -316,7 +327,7 @@ header {
   grid-row: span 2;
 }
 
-.grid-item--two-links {
+.grid-item--two-links1 {
   display: flex;
   flex-direction: column;
 }
@@ -331,7 +342,7 @@ header {
   min-width: 322px;
 }
 
-.grid-item--two-links {
+.grid-item--two-links2 {
   display: flex;
   flex-direction: column;
 }
@@ -386,4 +397,84 @@ header {
 #mc:hover {
   filter: grayscale(0%);
 }
+
+/* АДАПТИВ */
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .grid-item--scroll {
+    grid-column: 1 / -1;
+  }
+
+  .grid-item--address {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .grid-item--two-links2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .grid-item--links {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+  }
+
+  .grid-item--two-links1 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .grid-item--image-list {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .grid-item--text {
+    grid-column: 2 / -1;
+    grid-row: 4 / 5;
+  }
+}
+
+@media (max-width: 390px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-item--scroll {
+    order: 1;
+  }
+
+  .grid-item--address {
+    order: 2;
+  }
+
+  .grid-item--links {
+    order: 4;
+  }
+
+  .grid-item--two-links1 {
+    order: 5;
+  }
+
+  .grid-item--text {
+    order: 7;
+  }
+
+  .grid-item--two-links2 {
+    order: 3;
+  }
+
+  .grid-item--image-list {
+    order: 6;
+  }
+}
+/* АДАПТИВ */
+
 /* FOOTER */

@@ -56,6 +56,7 @@ function renderProducts(products) {
     ]);
     productCard.appendChild(productTitle);
 
+    // Цены
     const productPricing = document.createElement('div');
     productPricing.classList.add('product-card__pricing');
 

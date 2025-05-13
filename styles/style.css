@@ -71,7 +71,6 @@ header {
 .container {
   width: 1470px;
   padding: 0 35px;
-  font-size: 0;
 }
 
 @media (max-width: 390px) {
@@ -337,7 +336,6 @@ header {
 }
 
 .grid-item__text--privacy {
-  font-size: 0;
   color: #808080;
   min-width: 322px;
 }
